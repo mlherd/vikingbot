@@ -56,7 +56,7 @@ class MotorController:
                 self.p1.ChangeDutyCycle(speedW1)
                 self.p2.ChangeDutyCycle(speedW2)
                 
-                def turnRight(self):
+        def turnRight(self):
                 GPIO.output(self.PinForwardW1, GPIO.HIGH)
                 GPIO.output(self.PinBackwardW1, GPIO.LOW)
                 GPIO.output(self.PinBackwardW2, GPIO.HIGH)
