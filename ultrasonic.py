@@ -1,8 +1,6 @@
 import time
 import RPi.GPIO as GPIO
-
 class Ultrasonic:
-
         def __init__ (self):
                 self.PinTrigger = 21
                 self.PinEcho = 20
