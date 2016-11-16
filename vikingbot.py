@@ -12,20 +12,20 @@ vikingbotMotors.setup_PWM()
 vikingbotMotors.start_PWM()
 vikingbotMotors.set_motorSpeed(90,90)
 vikingbotMotors.set_SleepTime(0.030)
-#vikingbotMotors.goForward()
-#vikingbotMotors.sset_SleepTime(1)
-#vikingbotMotors.turnLeft()
-#vikingbotMotors..set_SleepTime(1)
-#vikingbotMotors.turnRight()
-#vikingbotMotors.set_SleepTime(2)
-#vikingbotMotors.goBack()
+vikingbotMotors.goForward()
+vikingbotMotors.sset_SleepTime(1)
+vikingbotMotors.turnLeft()
+vikingbotMotors..set_SleepTime(1)
+vikingbotMotors.turnRight()
+vikingbotMotors.set_SleepTime(2)
+vikingbotMotors.goBack()
 
-ultrasonicSensorBack.setup_GPIO()
+#ultrasonicSensorBack.setup_GPIO()
 
-while(True):
+#while(True):
 
-        if (ultrasonicSensorBack.get_distance() > 10):
-                vikingbotMotors.goBack()
+#        if (ultrasonicSensorBack.get_distance() > 10):
+#                vikingbotMotors.goBack()
 
 
 GPIO.cleanup()
