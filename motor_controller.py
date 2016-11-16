@@ -56,6 +56,16 @@ class MotorController:
                 self.p1.ChangeDutyCycle(speedW1)
                 self.p2.ChangeDutyCycle(speedW2)
                 
+                 def turnRight(self):
+                GPIO.output(self.PinForwardW1, GPIO.HIGH)
+                GPIO.output(self.PinBackwardW1, GPIO.LOW)
+                GPIO.output(self.PinBackwardW2, GPIO.HIGH)
+                GPIO.output(self.PinForwardW2, GPIO.LOW)
+                print "turning right"
+                time.sleep(self.sleeptime)
+                GPIO.output(self.PinForwardW1, GPIO.LOW)
+                GPIO.output(self.PinBackwardW2, GPIO.LOW)
+
         def turnLeft(self):
                 GPIO.output(self.PinForwardW1, GPIO.LOW)
                 GPIO.output(self.PinBackwardW1, GPIO.HIGH)
@@ -88,7 +98,5 @@ class MotorController:
 
         def cleanup(self):
                 GPIO.cleanup()
-
-
-
-
+                
+                
