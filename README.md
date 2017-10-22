@@ -2,7 +2,7 @@
 
 Android Control Robotic Car
 
-Thanh Tien Truong
+Thanh Tien Truong - 
 Husnu Melih Erdogan
 
 ECE 558: Embedded System Programming
