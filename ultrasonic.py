@@ -8,7 +8,8 @@ class Ultrasonic:
         def set_Pins(self, pinEcho, pinTrigger):
                 self.PinEcho = pinEcho
                 self.PinTrigger = pinTrigger
-
+        
+        #read the sensor and measure the distance
         def measure(self):
                 GPIO.output(self.PinTrigger, True)
                 time.sleep(0.00001)
@@ -26,7 +27,7 @@ class Ultrasonic:
 
                 return distance
 
-        # make it saple number flex
+        # read the sensor 3 times. measure avarage of 3 distance samples. This function creates a better result. Causes a little bit delay.
         def measure_average(self):
                 distance1 = self.measure()
                 time.sleep(0.1)
